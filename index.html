@@ -20,6 +20,9 @@
         color: #f8fafc;
         font-family: Outfit, Arial, sans-serif;
       }
+      nav { position: fixed; z-index: 2; top: 1.4rem; right: max(5vw, 1.5rem); display: flex; gap: 1.1rem; }
+      nav a { color: #cbd5e1; font-size: .95rem; font-weight: 600; text-decoration: none; transition: color .2s; }
+      nav a:hover, nav a[aria-current="page"] { color: #fff; }
       .glow {
         position: fixed;
         border-radius: 50%;
@@ -84,6 +87,7 @@
     </style>
   </head>
   <body>
+    <nav aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><a href="content.html">Content</a></nav>
     <div class="glow glow-one"></div><div class="glow glow-two"></div>
     <main class="card">
       <p class="eyebrow">A small beginning <span class="spark">✦</span></p>
